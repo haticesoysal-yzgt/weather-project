@@ -39,8 +39,9 @@ const getWeatherDataFromApi = async () => {
       );
       if (filteredArray.length > 0) {
         msgSpan.innerText = `You already know the weather for ${name}, Please search for another city 👌`;
-        setTimeout(() =>
-         {msgSpan.innerText = "" }, 5000)
+        setTimeout(() => {
+          msgSpan.innerText = "";
+        }, 5000);
         return;
       }
     }
@@ -61,7 +62,8 @@ const getWeatherDataFromApi = async () => {
     list.prepend(createdlLi);
   } catch (error) {
     msgSpan.innerText = "City not found!";
-    setTimeout(() =>
-    {msgSpan.innerText = "" }, 5000)
+    setTimeout(() => {
+      msgSpan.innerText = "";
+    }, 5000);
   }
 };
