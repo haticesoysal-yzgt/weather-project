@@ -34,7 +34,7 @@ const getWeatherDataFromApi = async () => {
 
     const cityNameSpan = list.querySelectorAll("span");
     if (cityNameSpan.length > 0) {
-      const filteredArray = [...cityNameSpans].filter(
+      const filteredArray = [...cityNameSpan].filter(
         (span) => span.innerHTML == name
       );
       if (filteredArray.length > 0) {
